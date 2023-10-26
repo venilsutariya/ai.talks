@@ -43,10 +43,6 @@ const ChatIdPage = async({
     if(!companion) {
         return redirect("/")
     }
-
-    if(!companion.messages) {
-        return redirect("/")
-    }
     return (
         <ChatClient companion={companion} />
      );
